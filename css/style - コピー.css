@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.skill-title {
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+}
+
+.acframe {
+  margin: 2em 0;
+}
+
+.acframe table tbody th {
+  background-color: #83cef0;
+}
+
+.acframe table tbody td {
+  color: #434343;
+}
+
+.acframe table tbody th,
+.acframe table tbody td {
+  width: 100%;
+  display: block;
+}
+
+/*中身表示*/
+.cssacc:checked + label + .accshow {
+  height: auto;
+  padding: 5px;
+  background: #eaf6ff;
+  color: #fff;
+  opacity: 1;
+}
+
+.cssacc:checked + label:before {
+  content: '▼';
+}
+
+.tab {
+  border-bottom: 3px solid #fb4343;
+}
+
+.tab li {
+  color: #333;
+  float: left;
+  margin: 0 10px -1px 0;
+  padding: 10px 20px;
+  border: 1px solid #fb4343;
+  cursor: pointer;
+  list-style: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tab li.active {
+  color: #fff;
+  background: #fb4343;
+  cursor: auto;
+}
+
+.tab .area table {
+  display: none;
+}
+
+.tab .area table.show {
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  body > div.area > table.table.table-hover.show > thead > tr:nth-child(2) {
+    display: none;
+  }
+  div.area th {
+    background-color: #c0c0c0;
+  }
+  div.area th,
+  div.area td {
+    width: 100%;
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
