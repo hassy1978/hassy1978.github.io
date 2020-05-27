@@ -1,71 +1,52 @@
 $max-width: 1920px;
 
-.skill-title {
-  background-color: #3f51b5;
-  color: #fff;
-  text-align: center;
+#canvas1,#canvas2{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
 }
-// dropDown
-
-.acframe {
-  margin: 2em 0;
-
-  table tbody th {
-    background-color: #83cef0;
-  }
-
-  table tbody td {
-    color: #434343;
-  }
-
-  table tbody td,
-  table tbody th {
-    width: 100%;
-    display: block;
+//section {
+//  height: 100vh;
+//}
+.content-section{
+  padding: 50px 0;
+  @media only screen and (min-width:1024px) {
+    height: 100vh;
+    display: flex;
   }
 }
-/*中身表示*/
-.cssacc:checked+label+.accshow {
-  height: auto;
-  padding: 5px;
-  background: #eaf6ff;
-  color: #fff;
-  opacity: 1;
-}
-
-.cssacc:checked+label:before {
-  content: '▼';
-}
-
-.tab {
-  border-bottom: 3px solid #fb4343;
-
-  li {
-    color: #333;
-    float: left;
-    margin: 0 10px -1px 0;
-    padding: 10px 20px;
-    border: 1px solid #fb4343;
-    cursor: pointer;
-    list-style: none;
-    transition: 0.3s;
-  }
-
-  li.active {
-    color: #fff;
-    background: #fb4343;
-    cursor: auto;
-  }
-
-  .area table {
-    display: none;
-  }
-
-  .area table.show {
-    display: block;
+.container{
+  @media only screen and (min-width:1024px) {
+    margin: auto;
   }
 }
+#about {
+  //height: 200vh;
 
+  .my-5{
+    margin: 0 !important;
+  }
+}
+.icon-img{
+  width: 50%;
+  height: 50%;
+}
+
+#skills{
+  //height: 150vh;
+
+  ul{
+    padding: 0;
+
+    li{
+      width: calc(100% / 6);
+    }
+  }
+}
 .graphs {
   list-style: none;
   display: flex;
@@ -120,32 +101,10 @@ $max-width: 1920px;
     width: 35%;
   }
 }
-/*
-#portfolio ul {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  list-style: none;
-  padding: 0;
-
-    img {
-      width: 100%;
-      height: 50vw;
-      object-fit: contain;
-    }
-  .slick-dots {
-
-  }
-}
-*/
-section {
-  height: 100vh;
-}
 #portfolio {
   //height: 100vh;
   //background-color: #778899;
+  padding-bottom: 100px;
 
   .container {
     position: relative;
@@ -173,45 +132,10 @@ section {
 section #footer {
   z-index: 101;
 }
-.canvas-view{
+.canvas-noview{
   z-index: -2 !important;
 }
 
-
-// Presentational stuff
-/*
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 99;
-  text-align: center;
-  font-family: Raleway, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  background-color: rgba(255,255,255,.75);
-  box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
-  padding: 1em 2em;
-  line-height: 1.5;
-
-  small {
-    display: block;
-    text-transform: lowercase;
-    font-size: .7em;
-
-    &:first-child {
-      border-bottom: 1px solid rgba(0,0,0,.25);
-      padding-bottom: .5em;
-    }
-
-    &:last-child {
-      border-top: 1px solid rgba(0,0,0,.25);
-      padding-top: .5em;
-    }
-  }
-}
-*/
 @media only screen and (max-width:480px) {
   body > div.area > table.table.table-hover.show > thead > tr:nth-child(2) {
     display: none;
