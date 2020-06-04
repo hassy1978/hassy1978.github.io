@@ -131,6 +131,10 @@
   color: #fff;
 }
 
+#portfolio .label_skitter td:first-child {
+  width: 100px;
+}
+
 #portfolio .progressbar {
   background-color: #000;
   height: 5px;

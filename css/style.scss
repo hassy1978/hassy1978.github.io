@@ -124,6 +124,9 @@ $max-width: 1920px;
     opacity: 0.8;
     color: #fff;
   }
+  .label_skitter td:first-child {
+    width: 100px;
+  }
   .progressbar{
     background-color: #000;
     height: 5px;
